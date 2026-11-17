@@ -126,6 +126,31 @@
 
 .wlg section:nth-last-of-type(2){padding-bottom:64px}
 .wlg section:last-of-type{border-top:0;padding-top:0;padding-bottom:48px}
+
+/* bigger text on phones */
+@media (max-width:600px){
+.wlg header h1{font-size:clamp(20px,6.9vw,40px)}
+.wlg p{font-size:17px}
+.wlg .wl-pay li{font-size:16px}
+.wlg .wl-biz{font-size:18px}
+.wlg .wl-copy small{font-size:14.5px}
+.wlg .wl-copy .wl-addr{font-size:clamp(21px,5.8vw,26px)}
+.wlg .wl-acct .wl-bank{font-size:15px}
+.wlg .wl-acct .wl-holder{font-size:16px}
+.wlg .wl-acct .wl-num{font-size:clamp(24px,6.6vw,28px)}
+.wlg .wl-stn{font-size:14.5px}
+.wlg .wl-stn b{font-size:16.5px}
+.wlg .wl-dist{font-size:16.5px}
+.wlg .wl-line{font-size:13px}
+.wlg .wl-faq summary{font-size:19px}
+.wlg .wl-btn{font-size:17px}
+.wlg .wl-btn small{font-size:14px}
+.wlg .wl-btn.wl-link span{font-size:clamp(12px,3.6vw,14px)}
+.wlg .wl-btn.wl-call{font-size:18px}
+.wlg .wl-warn{font-size:19px}
+}
+
+.wlg .wl-nb{white-space:nowrap}
 </style>
 <div class="wlg">
 <div class="wl-wrap">
@@ -135,7 +160,7 @@
 
   <section>
     <h2><span class="wl-hi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>레슨 장소</h2>
-    <address><button type="button" class="wl-copy" id="copyAddr"><span class="wl-addr">서울특별시 관악구 신림동3길 16</span><small id="copyMsg" aria-live="polite">눌러서 주소 복사</small></button></address>
+    <address><button type="button" class="wl-copy" id="copyAddr"><span class="wl-addr">서울특별시 관악구 <span class="wl-nb">신림동3길 16</span></span><small id="copyMsg" aria-live="polite">눌러서 주소 복사</small></button></address>
     <a class="wl-btn wl-joined" href="https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B4%80%EC%95%85%EA%B5%AC%20%EC%8B%A0%EB%A6%BC%EB%8F%993%EA%B8%B8%2016?searchType=address&amp;c=15.00,0,0,0,dh" target="_blank" rel="noopener">네이버 지도에서 보기</a>
     <ul class="wl-transit" aria-label="지하철역에서 거리">
       <li><span class="wl-line wl-l2">2호선</span><span class="wl-stn"><b>신림역</b>6번 출구</span><span class="wl-dist">약 400m</span></li>
