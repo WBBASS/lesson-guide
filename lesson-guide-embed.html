@@ -103,9 +103,15 @@
 .wlg .wl-arrive{animation:wl-arrive 2.8s ease-in-out infinite}
 @media (prefers-reduced-motion: reduce){.wlg section.wl-reveal{opacity:1;transform:none;transition:none}.wlg .wl-arrive,.wlg .wl-copy.wl-done,.wlg .wl-copy.wl-done::after{animation:none}}
 
-.wlg .wl-tel{display:flex;align-items:center;gap:10px;margin:0 0 24px;font-weight:600;font-size:17px;line-height:1.4}
-.wlg .wl-tel-ic{flex:none;width:26px;height:26px;fill:none;stroke:var(--teal);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .wlg section:last-of-type{padding-bottom:48px}
+
+.wlg .wl-btn.wl-call{margin-top:8px;min-height:56px;gap:10px;background:#34B565;color:#0E1A22;font-size:17px;font-weight:600}
+.wlg .wl-btn.wl-call .wl-ico{width:24px;height:24px}
+.wlg .wl-btn:hover{filter:none}
+@media (hover:hover){
+.wlg .wl-btn:hover{box-shadow:inset 0 0 0 999px rgba(255,255,255,.12)}
+.wlg .wl-btn:not(.wl-joined):hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(18,32,43,.14),inset 0 0 0 999px rgba(255,255,255,.12)}
+}
 </style>
 <div class="wlg">
 <div class="wl-wrap">
@@ -163,13 +169,13 @@
   </section>
 
   <section>
-    <p class="wl-tel"><svg class="wl-tel-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>문의 전화 0502-1940-1470</span></p>
     <div class="wl-btns wl-links">
       <a class="wl-btn wl-link wl-lnk-hp" href="https://wanbybass.com" target="_blank" rel="noopener"><svg class="wl-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5.5 9.5V20h13V9.5"/></svg><span>홈페이지</span></a>
       <a class="wl-btn wl-link wl-lnk-yt" href="https://www.youtube.com/wanbybass" target="_blank" rel="noopener"><svg class="wl-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.2v5.6l4.8-2.8z" fill="currentColor" stroke="none"/></svg><span>유튜브</span></a>
       <a class="wl-btn wl-link wl-lnk-kk" href="https://pf.kakao.com/_CxckxnT" target="_blank" rel="noopener"><svg class="wl-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4C7 4 3 7.1 3 11c0 2.5 1.7 4.7 4.2 6l-1 3.6 4.2-2.4c.5.1 1 .1 1.6.1 5 0 9-3.1 9-7s-4-7.3-9-7.3z" fill="currentColor" stroke="none"/></svg><span>카카오채널</span></a>
       <a class="wl-btn wl-link wl-lnk-ig" href="https://www.instagram.com/wanbybass/" target="_blank" rel="noopener"><svg class="wl-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg><span>인스타그램</span></a>
     </div>
+    <a class="wl-btn wl-call" href="tel:050219401470"><svg class="wl-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>전화 문의 0502-1940-1470</span></a>
   </section>
 </div>
 </div>
