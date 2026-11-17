@@ -5,24 +5,23 @@
 .wlg{--bg:#EEF1F2; --surface:#FFFFFF; --ink:#12202B; --muted:#52646F; --line:#CBD5DA;
   --teal:#0F4C5C; --brass:#B8841F; --on-teal:#FFFFFF; --string:#12202B;box-sizing:border-box;color-scheme:light;background:var(--bg);color:var(--ink);font-family:"Paperlogy","Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.85;-webkit-text-size-adjust:100%;text-align:left}
 .wlg .wl-wrap{max-width:640px;margin:0 auto;padding:0 22px}
-.wlg header{padding:56px 0 8px}
-.wlg header h1{font-size:clamp(20px,6.2vw,40px);white-space:nowrap;line-height:1.15;font-weight:900;margin:0 0 14px;letter-spacing:-.02em;word-break:keep-all}
-.wlg header p{display:inline-block;margin:0;padding:6px 16px;border-radius:999px;background:var(--teal);color:var(--on-teal);font-weight:700;font-size:15px}
-.wlg .wl-h1sub{display:block;margin-top:6px;font-size:.55em;font-weight:700;letter-spacing:0;color:var(--muted)}
+.wlg header{padding:56px 0 0}
+.wlg header h1{font-size:clamp(20px,6.2vw,40px);white-space:nowrap;line-height:1.15;font-weight:700;margin:0 0 14px;letter-spacing:-.02em;word-break:keep-all}
+.wlg .wl-h1sub{display:block;margin-top:6px;font-size:.55em;font-weight:600;letter-spacing:0;color:var(--muted)}
 .wlg section{padding:76px 0;border-top:2px solid var(--line)}
-.wlg section:first-of-type{border-top:0}
-.wlg h2{display:flex;align-items:center;gap:14px;font-size:28px;font-weight:900;line-height:1.3;margin:0 0 34px;letter-spacing:-.01em;word-break:keep-all}
+.wlg section:first-of-type{border-top:0;padding-top:30px}
+.wlg h2{display:flex;align-items:center;gap:14px;font-size:28px;font-weight:700;line-height:1.3;margin:0 0 34px;letter-spacing:-.01em;word-break:keep-all}
 .wlg .wl-hi{flex:none;display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:14px;background:var(--teal);color:var(--on-teal)}
 .wlg .wl-hi svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .wlg p{margin:0 0 16px}
-.wlg .wl-price{font-size:clamp(28px,7.5vw,38px);font-weight:900;line-height:1.1;margin:0 0 4px;color:var(--teal);letter-spacing:-.02em}
-.wlg .wl-price small{font-size:.38em;font-weight:700;color:var(--ink);margin-left:4px}
+.wlg .wl-price{font-size:clamp(28px,7.5vw,38px);font-weight:700;line-height:1.1;margin:0 0 4px;color:var(--teal);letter-spacing:-.02em}
+.wlg .wl-price small{font-size:.38em;font-weight:600;color:var(--ink);margin-left:4px}
 .wlg .wl-pay{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;padding:0;list-style:none}
 .wlg .wl-pay li{padding:7px 14px;border:1.5px solid var(--line);border-radius:999px;font-size:15px;font-weight:500;background:var(--surface)}
 .wlg .wl-note{padding:18px 20px;background:var(--surface);border-left:4px solid var(--brass);border-radius:0 8px 8px 0}
 .wlg .wl-note p{margin:0}
-.wlg address{font-style:normal;font-size:19px;font-weight:700;margin:0;word-break:keep-all}
-.wlg .wl-btn{display:flex;align-items:center;justify-content:center;min-height:52px;padding:12px 20px;border-radius:10px;background:var(--teal);color:var(--on-teal);font-weight:700;font-size:16px;text-decoration:none;text-align:center}
+.wlg address{font-style:normal;font-size:19px;font-weight:600;margin:0;word-break:keep-all}
+.wlg .wl-btn{display:flex;align-items:center;justify-content:center;min-height:52px;padding:12px 20px;border-radius:10px;background:var(--teal);color:var(--on-teal);font-weight:600;font-size:16px;text-decoration:none;text-align:center}
 .wlg .wl-btn:hover{filter:brightness(1.08)}
 .wlg .wl-btn:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
 .wlg .wl-btn.wl-alt{background:transparent;color:var(--ink);border:2px solid var(--teal)}
@@ -30,13 +29,13 @@
 .wlg .wl-btn.wl-alt{flex-direction:column;gap:2px}
 .wlg .wl-btn small{font-size:13px;font-weight:500;color:var(--muted)}
 .wlg .wl-copy{display:block;width:100%;text-align:left;font:inherit;color:inherit;background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:14px 16px;cursor:pointer}
-.wlg .wl-copy .wl-addr{display:block;font-size:clamp(20px,5.6vw,25px);font-weight:900;line-height:1.4;word-break:keep-all}
+.wlg .wl-copy .wl-addr{display:block;font-size:clamp(20px,5.6vw,25px);font-weight:700;line-height:1.4;word-break:keep-all}
 .wlg .wl-copy small{display:block;font-size:13px;font-weight:500;color:var(--muted);margin-top:2px}
 .wlg .wl-copy:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
 .wlg .wl-copy.wl-done{border-color:var(--teal)}
-.wlg .wl-copy.wl-done small{color:var(--teal);font-weight:700}
+.wlg .wl-copy.wl-done small{color:var(--teal);font-weight:600}
 .wlg .wl-pay + .wl-biz{margin-top:28px}
-.wlg .wl-biz{display:flex;align-items:center;gap:12px;font-weight:700;font-size:17px;line-height:1.6;word-break:keep-all}
+.wlg .wl-biz{display:flex;align-items:center;gap:12px;font-weight:600;font-size:17px;line-height:1.6;word-break:keep-all}
 .wlg .wl-ck{flex:none;width:32px;height:32px;color:var(--teal)}
 .wlg .wl-ck path{fill:none;stroke:var(--on-teal);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
 .wlg .wl-pricebox{padding:28px 26px;border-radius:18px;background-color:var(--teal);color:var(--on-teal);background-image:repeating-linear-gradient(to bottom,transparent 0 14px,rgba(127,127,127,.2) 14px 16px)}
@@ -46,7 +45,7 @@
 .wlg .wl-btn.wl-joined{border-radius:0 0 10px 10px;background:#34B565;color:#0E1A22}
 .wlg .wl-btns.wl-links{margin-top:0;grid-template-columns:repeat(4,1fr);gap:8px}
 .wlg .wl-btn.wl-link{flex-direction:column;gap:8px;border:0;padding:16px 2px}
-.wlg .wl-btn.wl-link span{font-size:clamp(11px,3.2vw,13px);font-weight:700;line-height:1.2;white-space:nowrap}
+.wlg .wl-btn.wl-link span{font-size:clamp(11px,3.2vw,13px);font-weight:600;line-height:1.2;white-space:nowrap}
 .wlg .wl-ico{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .wlg .wl-btn.wl-link small{color:inherit;opacity:.85;font-size:12px;font-weight:500;line-height:1.35;overflow-wrap:anywhere}
 .wlg .wl-lnk-hp{background:var(--teal);color:var(--on-teal)}
@@ -56,18 +55,18 @@
 .wlg .wl-copy.wl-acct{margin-top:30px;border-radius:12px;border-bottom:1.5px solid var(--line)}
 .wlg .wl-copy.wl-acct.wl-done{border-color:var(--teal)}
 .wlg .wl-copy.wl-acct + .wl-biz{margin-top:36px}
-.wlg .wl-acct .wl-bank{display:block;font-size:14px;font-weight:700;color:var(--muted)}
-.wlg .wl-acct .wl-num{display:block;font-size:clamp(22px,6vw,26px);font-weight:900;line-height:1.4;letter-spacing:.01em;margin:2px 0}
+.wlg .wl-acct .wl-bank{display:block;font-size:14px;font-weight:600;color:var(--muted)}
+.wlg .wl-acct .wl-num{display:block;font-size:clamp(22px,6vw,26px);font-weight:700;line-height:1.4;letter-spacing:.01em;margin:2px 0}
 .wlg .wl-acct .wl-holder{display:block;font-size:15px;font-weight:500}
-.wlg .wl-arrive{margin:34px 0 0;padding:20px 22px;background:var(--surface);border-left:6px solid var(--brass);border-radius:0 10px 10px 0;font-size:21px;font-weight:700;line-height:1.6;word-break:keep-all}
-.wlg .wl-arrive strong{color:var(--teal);font-weight:900}
+.wlg .wl-arrive{margin:34px 0 0;padding:20px 22px;background:var(--surface);border-left:6px solid var(--brass);border-radius:0 10px 10px 0;font-size:21px;font-weight:600;line-height:1.6;word-break:keep-all}
+.wlg .wl-arrive strong{color:var(--teal);font-weight:700}
 .wlg .wl-faq{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.wlg .wl-faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px;min-height:56px;padding:12px 0;font-weight:700;font-size:18px;word-break:keep-all}
+.wlg .wl-faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px;min-height:56px;padding:12px 0;font-weight:600;font-size:18px;word-break:keep-all}
 .wlg .wl-faq summary::-webkit-details-marker{display:none}
 .wlg .wl-faq summary::after{content:"+";flex:none;font-size:26px;font-weight:400;line-height:1;color:var(--teal)}
 .wlg .wl-faq[open] summary::after{content:"−"}
 .wlg .wl-faq summary:focus-visible{outline:3px solid var(--brass);outline-offset:2px}
-.wlg .wl-qa{flex:none;display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;font-weight:900;font-size:18px;line-height:1}
+.wlg .wl-qa{flex:none;display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;font-weight:700;font-size:18px;line-height:1}
 .wlg .wl-qa.wl-q{background:#C8372D;color:#FFFFFF}
 .wlg .wl-qa.wl-a{background:var(--brass);color:#12202B}
 .wlg .wl-qt{flex:1}
@@ -78,13 +77,13 @@
 .wlg .wl-transit{display:grid;grid-template-columns:1fr 1fr;list-style:none;margin:20px 0 0;padding:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface)}
 .wlg .wl-transit li{display:flex;flex-direction:column;align-items:flex-start;gap:3px;padding:12px 14px;line-height:1.4;min-width:0}
 .wlg .wl-transit li + li{border-left:1px solid var(--line)}
-.wlg .wl-line{flex:none;text-align:center;padding:1px 9px;border-radius:999px;font-weight:900;font-size:12px}
+.wlg .wl-line{flex:none;text-align:center;padding:1px 9px;border-radius:999px;font-weight:700;font-size:12px}
 .wlg .wl-l2{background:#3DB44A;color:#0E1A22}
 .wlg .wl-sl{background:#4E67A5;color:#FFFFFF}
 .wlg .wl-stn{font-size:13px;line-height:1.4}
-.wlg .wl-stn b{font-weight:700;font-size:15px;margin-right:4px}
-.wlg .wl-dist{flex:none;font-weight:900;font-size:15px;white-space:nowrap}
-.wlg .wl-warn{font-weight:700;font-size:18px;margin-bottom:10px;word-break:keep-all}
+.wlg .wl-stn b{font-weight:600;font-size:15px;margin-right:4px}
+.wlg .wl-dist{flex:none;font-weight:700;font-size:15px;white-space:nowrap}
+.wlg .wl-warn{font-weight:600;font-size:18px;margin-bottom:10px;word-break:keep-all}
 .wlg footer{padding:30px 0 56px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
 .wlg footer p{margin:0 0 4px}
 .wlg footer a{color:inherit;text-underline-offset:3px}
@@ -93,7 +92,6 @@
 <div class="wl-wrap">
   <header>
     <h1>완비베이스랩 개인레슨 안내<span class="wl-h1sub">(수강생용)</span></h1>
-    <p>1:1 오프라인 베이스 기타 레슨</p>
   </header>
 
   <section>
